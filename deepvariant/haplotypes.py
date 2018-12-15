@@ -54,6 +54,11 @@ import numpy as np
 from third_party.nucleus.util import genomics_math
 from third_party.nucleus.util import variant_utils
 
+try:
+  xrange
+except NameError:
+  xrange = range
+
 FLAGS = flags.FLAGS
 
 flags.DEFINE_bool(

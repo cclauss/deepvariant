@@ -54,6 +54,11 @@ from third_party.nucleus.protos import reads_pb2
 from third_party.nucleus.util import ranges
 from third_party.nucleus.util import variant_utils
 
+try:
+  xrange
+except NameError:
+  xrange = range
+
 FLAGS = flags.FLAGS
 flags.DEFINE_string(
     'truth_variants', None,

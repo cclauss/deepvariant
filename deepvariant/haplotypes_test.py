@@ -45,6 +45,11 @@ from third_party.nucleus.testing import test_utils
 from deepvariant import haplotypes
 from deepvariant.testing import flagsaver
 
+try:
+  xrange
+except NameError:
+  xrange = range
+
 FLAGS = flags.FLAGS
 
 
